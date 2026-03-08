@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="Restaurante de sushi com ingredientes frescos e preparo artesanal.">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+   <title>Sushi | Sabores Japoneses Autênticos</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+   <div class="nav__overlay" id="navOverlay"></div>
+   <div class="nav__drawer" id="navDrawer">
+      <button class="nav__drawer-close" id="navDrawerClose"><i class="ri-close-line"></i></button>
+      <div class="nav__drawer-logo"> Sushi Saboroso</div>
+      <a href="#home" class="nav__drawer-link">Início</a>
+      <a href="#about" class="nav__drawer-link">Sobre Nós</a>
+      <a href="#menu" class="nav__drawer-link">Cardápio</a>
+      <a href="#new" class="nav__drawer-link">Especial</a>
+      <a href="#contact" class="nav__drawer-link">Contato</a>
+   </div>
+
+   <header class="header" id="header">
+      <nav class="nav">
+         <a href="#home" class="nav__logo">Sushi Saboroso</a>
+         <ul class="nav__list" id="navList">
+            <li><a href="#home" class="nav__link">Início</a></li>
+            <li><a href="#about" class="nav__link">Sobre Nós</a></li>
+            <li><a href="#menu" class="nav__link">Cardápio</a></li>
+            <li><a href="#new" class="nav__link">Especial</a></li>
+            <li><a href="#contact" class="nav__link">Contato</a></li>
+         </ul>
+         <button class="nav__toggle" id="navToggle"><i class="ri-menu-line"></i></button>
+      </nav>
+   </header>
+
+   <main>
+      <!-- HOME -->
+      <section class="home section" id="home">
+         <div class="home__blob"></div>
+         <div class="home__left">
+            <div class="home__sup"><span class="dot"></span>Fresco &amp; Autêntico<span class="dot"></span></div>
+            <h1 class="home__title">Saboreie o Melhor<span>da Culinária Japonesa</span></h1>
+            <p class="home__desc">Servimos a mais fina culinária japonesa, preparada com ingredientes naturais
+               selecionados pelo nosso chef profissional. Cada prato é uma experiência única de sabor e tradição.</p>
+            <div class="home__btns">
+               <a href="#menu" class="btn btn--red"><i class="ri-restaurant-line"></i>Fazer Pedido</a>
+               <a href="#about" class="btn btn--outline">Saiba Mais</a>
+            </div>
+            <div class="home__kanji">美<br>味</div>
+         </div>
+         <div class="home__right">
+            <div class="home__img-wrap">
+               <video class="home__img" autoplay muted loop playsinline>
+                  <source src="sushi-girl.mp4" type="video/mp4">
+               </video>
+            </div>
+         </div>
+      </section>
+
+      <!-- SOBRE NÓS -->
+      <section class="about section" id="about">
+         <div class="container">
+            <div class="about__grid">
+               <div class="about__img-col reveal">
+                  <div class="about__card">
+                     <img class="about__food"
+                        src="https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=700&q=85&fit=crop&crop=center"
+                        alt="Ramen"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=700&q=85&fit=crop'">
+                     <div class="about__card-deco">日本</div>
+                  </div>
+                  <div class="about__badge">
+                     <div class="about__badge-num">10+</div>
+                     <div class="about__badge-lbl">Anos de<br>Experiência</div>
+                  </div>
+               </div>
+               <div class="about__text-col reveal">
+                  <span class="label">Sobre Nós</span>
+                  <h2 class="title">Tradição Japonesa com<br><span>Sabor Autêntico</span></h2>
+                  <p class="about__desc">Há mais de dez anos trazemos os sabores genuínos do Japão até você. Cada prato
+                     é preparado com dedicação, respeito às origens e os melhores ingredientes frescos.</p>
+                  <div class="about__feats">
+                     <div class="about__feat">
+                        <div class="about__feat-ic"><i class="ri-leaf-line"></i></div><span
+                           class="about__feat-txt">Ingredientes Frescos e Naturais</span>
+                     </div>
+                     <div class="about__feat">
+                        <div class="about__feat-ic"><i class="ri-award-line"></i></div><span
+                           class="about__feat-txt">Chef Premiado</span>
+                     </div>
+                     <div class="about__feat">
+                        <div class="about__feat-ic"><i class="ri-heart-line"></i></div><span
+                           class="about__feat-txt">Feito com Amor</span>
+                     </div>
+                     <div class="about__feat">
+                        <div class="about__feat-ic"><i class="ri-time-line"></i></div><span
+                           class="about__feat-txt">Entrega Rápida</span>
+                     </div>
+                  </div>
+                  <a href="#menu" class="btn btn--red">Ver Cardápio</a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- CARDÁPIO -->
+      <section class="menu section" id="menu">
+         <div class="container">
+            <div class="menu__top reveal">
+               <span class="label">Explore Nossos Pratos</span>
+               <h2 class="title">Nosso Cardápio</h2>
+            </div>
+            <div class="menu__filters reveal">
+               <button class="menu__flt active" data-f="all">🍽 Todos</button>
+               <button class="menu__flt" data-f="sushi">🍣 Sushi</button>
+               <button class="menu__flt" data-f="ramen">🍜 Ramen</button>
+               <button class="menu__flt" data-f="others">🥟 Outros</button>
+            </div>
+            <div class="menu__grid" id="menuGrid">
+               <!-- SUSHI -->
+               <div class="menu__card reveal" data-cat="sushi">
+                  <div class="menu__card-thumb"><img
+                        src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400&q=80&fit=crop"
+                        alt="Maki Tradicional"></div>
+                  <div class="menu__card-body">
+                     <div class="menu__card-name">Maki Tradicional</div>
+                     <div class="menu__card-sub">Enrolado de Arroz com Nori e Recheio Sortido</div>
+                     <div class="menu__card-foot"><span class="menu__card-price">R$ 29,90</span></div>
+                  </div>
+               </div>
+               <div class="menu__card reveal" data-cat="sushi">
+                  <div class="menu__card-thumb"><img
+                        src="https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=400&q=80&fit=crop"
+                        alt="Maki Salmão"></div>
+                  <div class="menu__card-body">
+                     <div class="menu__card-name">Maki Salmão</div>
+                     <div class="menu__card-sub">Enrolado com Salmão Fresco e Cream Cheese</div>
+                     <div class="menu__card-foot"><span class="menu__card-price">R$ 32,90</span></div>
+                  </div>
+               </div>
+               <div class="menu__card reveal" data-cat="sushi">
+                  <div class="menu__card-thumb"><img
+                        src="https://images.unsplash.com/photo-1534482421-64566f976cfa?w=400&q=80&fit=crop"
+                        alt="Ikura Don"></div>
+                  <div class="menu__card-body">
+                     <div class="menu__card-name">Kaisen Don</div>
+                     <div class="menu__card-sub">Tigela Japonesa com Sashimi e Frutos do Mar</div>
+                     <div class="menu__card-foot"><span class="menu__card-price">R$ 38,90</span></div>
+                  </div>
+               </div>
+
+               <div class="menu__card reveal" data-cat="sushi">
+                  <div class="menu__card-thumb"><img
+                        src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&q=80&fit=crop"
+                        alt="Tako Nigiri"></div>
+                  <div class="menu__card-body">
+                     <div class="menu__card-name">Sushi Barco</div>
+                     <div class="menu__card-sub">Seleção de Sushi Servida em Bandeja de Madeira</div>
+                     <div class="menu__card-foot"><span class="menu__card-price">R$ 34,90</span></div>
+                  </div>
+               </div>
+               <div class="menu__card reveal" data-cat="sushi">
+                  <div class="menu__card-thumb"><img
+                        src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=400&q=80&fit=crop"
+                        alt="Amaebi Nigiri"></div>
+                  <div class="menu__card-body">
+                     <div class="menu__card-name">Sushi Moriawase</div>
+                     <div class="menu__card-sub">Seleção de Sushi Premium no Quadro</div>
+                     <div class="menu__card-foot"><span class="menu__card-price">R$ 36,90</span></div>
+                  </div>
+               </div>
+               <div class="menu__card reveal" data-cat="sushi">
+                  <div class="menu__card-thumb"><img
+                        src="https://images.unsplash.com/photo-1559410545-0bdcd187e0a6?w=400&q=80&fit=crop"
+                        alt="Sake Nigiri"></div>
+                  <div class="menu__card-body">
+                     <div class="menu__card-name">Toro Maki</div>
+                     <div class="menu__card-sub">Maki com Cobertura de Atum Fresco</div>
+                     <div class="menu__card-foot"><span class="menu__card-price">R$ 33,90</span></div>
+                  </div>
+               </div>
+               <!-- RAMEN -->
+               <div class="menu__card reveal" data-cat="ramen">
+                  <div class="menu__card-thumb"><img
+                        src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&q=80&fit=crop"
+                        alt="Soja Ramen"></div>
+                  <div class="menu__card-body">
+                     <div class="menu__card-name">Soja Ramen</div>
+                     <div class="menu__card-sub">Caldo de Shoyu com Macarrão e Ovo Marinado</div>
+                     <div class="menu__card-foot"><span class="menu__card-price">R$ 42,90</span></div>
+                  </div>
+               </div>
+               <div class="menu__card reveal" data-cat="ramen">
+                  <div class="menu__card-thumb"><img
+                        src="https://images.unsplash.com/photo-1623341214825-9f4f963727da?w=400&q=80&fit=crop"
+                        alt="Tonkotsu Ramen"></div>
+                  <div class="menu__card-body">
+                     <div class="menu__card-name">Tonkotsu Ramen</div>
+                     <div class="menu__card-sub">Caldo Cremoso de Osso de Porco com Chashu</div>
+                     <div class="menu__card-foot"><span class="menu__card-price">R$ 44,90</span></div>
+                  </div>
+               </div>
+               <div class="menu__card reveal" data-cat="ramen">
+                  <div class="menu__card-thumb"><img
+                        src="https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=400&q=80&fit=crop"
+                        alt="Shoyu Ramen"></div>
+                  <div class="menu__card-body">
+                     <div class="menu__card-name">Shoyu Ramen</div>
+                     <div class="menu__card-sub">Ramen Clássico com Molho de Soja e Nori</div>
+                     <div class="menu__card-foot"><span class="menu__card-price">R$ 42,90</span></div>
+                  </div>
+               </div>
+
+               <div class="menu__card reveal" data-cat="others">
+                  <div class="menu__card-thumb"><img
+                        src="https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80&fit=crop"
+                        alt="Nabemono Udon"></div>
+                  <div class="menu__card-body">
+                     <div class="menu__card-name">Chicken Katsu</div>
+                     <div class="menu__card-sub">Frango Empanado Crocante com Molho Tonkatsu</div>
+                     <div class="menu__card-foot"><span class="menu__card-price">R$ 46,90</span></div>
+                  </div>
+               </div>
+               <div class="menu__card reveal" data-cat="ramen">
+                  <div class="menu__card-thumb"><img
+                        src="https://images.unsplash.com/photo-1557872943-16a5ac26437e?w=400&q=80&fit=crop"
+                        alt="Yaki Udon"></div>
+                  <div class="menu__card-body">
+                     <div class="menu__card-name">Ramen Escuro</div>
+                     <div class="menu__card-sub">Ramen com Caldo Shoyu Intenso, Ovo e Cogumelos</div>
+                     <div class="menu__card-foot"><span class="menu__card-price">R$ 44,90</span></div>
+                  </div>
+               </div>
+               <div class="menu__card reveal" data-cat="others">
+                  <div class="menu__card-thumb"><img
+                        src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80&fit=crop"
+                        alt="Kitsune Udon"></div>
+                  <div class="menu__card-body">
+                     <div class="menu__card-name">Sopa Miso Cremosa</div>
+                     <div class="menu__card-sub">Sopa Japonesa Cremosa com Ervas e Azeite</div>
+                     <div class="menu__card-foot"><span class="menu__card-price">R$ 43,90</span></div>
+                  </div>
+               </div>
+               <!-- OUTROS -->
+               <div class="menu__card reveal" data-cat="others">
+                  <div class="menu__card-thumb"><img
+                        src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80&fit=crop" alt="Gyoza">
+                  </div>
+                  <div class="menu__card-body">
+                     <div class="menu__card-name">Gyoza</div>
+                     <div class="menu__card-sub">Pastéis Japoneses Grelhados com Recheio de Porco</div>
+                     <div class="menu__card-foot"><span class="menu__card-price">R$ 28,90</span></div>
+                  </div>
+               </div>
+               <div class="menu__card reveal" data-cat="others">
+                  <div class="menu__card-thumb"><img
+                        src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&q=80&fit=crop"
+                        alt="Onigiri"></div>
+                  <div class="menu__card-body">
+                     <div class="menu__card-name">Yaki Soba</div>
+                     <div class="menu__card-sub">Yakisoba Frito na Chapa com Legumes</div>
+                     <div class="menu__card-foot"><span class="menu__card-price">R$ 18,90</span></div>
+                  </div>
+               </div>
+               <div class="menu__card reveal" data-cat="others">
+                  <div class="menu__card-thumb"><img
+                        src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=400&q=80&fit=crop"
+                        alt="Sukiyaki"></div>
+                  <div class="menu__card-body">
+                     <div class="menu__card-name">Wagyu Grelhado</div>
+                     <div class="menu__card-sub">Wagyu Grelhado com Crosta Crocante</div>
+                     <div class="menu__card-foot"><span class="menu__card-price">R$ 52,90</span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+         </div>
+      </section>
+
+      <!-- ESPECIAL -->
+      <section class="new section" id="new">
+         <div class="container">
+            <div class="new__grid">
+               <div class="reveal">
+                  <span class="label">Novidade</span>
+                  <h2 class="new__title">Prato Especial da Casa<br><span>Kaisen Don</span></h2>
+                  <p class="new__desc">O melhor fruto do mar fresco, servido cru com molho shoyu, gengibre ralado e
+                     wasabi. Uma combinação perfeita que vai transportar seu paladar direto para o Japão.</p>
+                  <div class="new__tags">
+                     <span class="new__tag">🌿 Fresco Todo Dia</span>
+                     <span class="new__tag">🐟 Fruto do Mar Premium</span>
+                     <span class="new__tag">⭐ Escolha do Chef</span>
+                  </div>
+                  <a href="#contact" class="btn btn--white"><i class="ri-calendar-line"></i>Reservar Agora</a>
+               </div>
+               <div class="new__img-col reveal">
+                  <img class="new__img"
+                     src="https://images.unsplash.com/photo-1534482421-64566f976cfa?w=600&q=85&fit=crop&crop=center"
+                     alt="Sashimi Oishi">
+                  <div class="new__deco1">日本</div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section class="contact section" id="contact">
+         <div class="container">
+            <div class="contact__grid">
+               <div class="reveal">
+                  <span class="label">Fale Conosco</span>
+                  <h2 class="title">Entre em Contato e Peça<br>o Melhor Sushi</h2>
+                  <p class="contact__desc">Estamos prontos para receber seu pedido e tornar sua experiência gastronômica
+                     inesquecível. Venha nos visitar!</p>
+                  <div class="contact__items">
+                     <div class="contact__item">
+                        <div class="contact__ic"><i class="ri-map-pin-line"></i></div>
+                        <div>
+                           <div class="contact__lbl">Localização</div>
+                           <div class="contact__val">Brasil - Paraíba<br>Av. das Cerejeiras, 847</div>
+                        </div>
+                     </div>
+                     <div class="contact__item">
+                        <div class="contact__ic"><i class="ri-phone-line"></i></div>
+                        <div>
+                           <div class="contact__lbl">Telefone</div>
+                           <div class="contact__val">(83) 99812-3456</div>
+                        </div>
+                     </div>
+                     <div class="contact__item">
+                        <div class="contact__ic"><i class="ri-time-line"></i></div>
+                        <div>
+                           <div class="contact__lbl">Atendimento</div>
+                           <div class="contact__val">Segunda a Sexta<br>8h às 18h</div>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="contact__box reveal">
+                  <div class="contact__box-title">Receba Nossas Novidades</div>
+                  <p class="contact__box-sub">Receba ofertas exclusivas, novidades do cardápio e promoções sazonais
+                     diretamente no seu e-mail.</p>
+                  <label
+                     style="font-size:.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--red);display:block;margin-bottom:10px;">Seu
+                     endereço de e-mail</label>
+                  <div class="contact__sub-form">
+                     <input type="email" class="contact__input" id="emailInput" placeholder="Digite seu e-mail">
+                     <button class="contact__sub-btn" id="subBtn" onclick="handleSubscribe()">Assinar</button>
+                  </div>
+                  <div id="emailMsg"
+                     style="display:none;margin-top:10px;padding:10px 16px;border-radius:12px;font-size:.84rem;line-height:1.5;">
+                  </div>
+                  <div class="contact__stats">
+                     <div class="contact__stat">
+                        <div class="contact__stat-ico">⭐</div>
+                        <div class="contact__stat-num">4.9/5</div>
+                        <div class="contact__stat-lbl">Avaliação dos Clientes</div>
+                     </div>
+                     <div class="contact__stat">
+                        <div class="contact__stat-ico">🍱</div>
+                        <div class="contact__stat-num">500+</div>
+                        <div class="contact__stat-lbl">Pedidos por Dia</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="contact__deco-l">日<br>本</div>
+         <div class="contact__deco-r">接<br>触</div>
+      </section>
+   </main>
+
+   <footer class="footer">
+      <div class="footer__top-curve">
+         <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,50 C240,0 480,80 720,40 C960,0 1200,60 1440,30 L1440,50 L0,50 Z" fill="#3D0A14" />
+         </svg>
+      </div>
+      <div class="footer__body">
+         <div class="container">
+            <div class="footer__grid">
+
+               <!-- Brand -->
+               <div class="footer__brand">
+                  <div class="footer__logo"> Sushi Saboroso</div>
+                  <p class="footer__about">Culinária japonesa autêntica feita com amor e os melhores ingredientes
+                     frescos. Cada prato é uma viagem ao Japão.</p>
+                  <div class="footer__divider"></div>
+                  <p class="footer__quote">"O sabor que conecta culturas"</p>
+               </div>
+
+               <!-- Navegar + Cardápio (wrapped for mobile 2-col) -->
+               <div class="footer__nav-row">
+                  <div>
+                     <div class="footer__col-h">Navegar</div>
+                     <ul class="footer__links">
+                        <li><a href="#home" class="footer__lnk">Início</a></li>
+                        <li><a href="#about" class="footer__lnk">Sobre Nós</a></li>
+                        <li><a href="#menu" class="footer__lnk">Cardápio</a></li>
+                        <li><a href="#new" class="footer__lnk">Especial</a></li>
+                        <li><a href="#contact" class="footer__lnk">Contato</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                     <div class="footer__col-h">Cardápio</div>
+                     <ul class="footer__links">
+                        <li><a href="#menu" class="footer__lnk">🍣 Sushi</a></li>
+                        <li><a href="#menu" class="footer__lnk">🍜 Ramen</a></li>
+                        <li><a href="#menu" class="footer__lnk">🥟 Outros</a></li>
+                     </ul>
+                  </div>
+               </div>
+
+               <!-- Contato -->
+               <div class="footer__col-contact">
+                  <div class="footer__col-h">Contato</div>
+                  <ul class="footer__links">
+                     <li class="footer__contact-item"><i class="ri-map-pin-2-line"></i><span>Brasil - Paraíba<br>Av. das
+                           Cerejeiras, 847</span></li>
+                     <li class="footer__contact-item"><i class="ri-phone-line"></i><span>(83) 99812-3456</span></li>
+                     <li class="footer__contact-item"><i class="ri-time-line"></i><span>Seg–Sex, 8h–18h</span></li>
+                  </ul>
+               </div>
+
+            </div>
+            <div class="footer__bottom">
+               <span>© 2025 Sushi · Todos os Direitos Reservados</span>
+               <span>Feito com ❤️ para os amantes da culinária japonesa</span>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <button class="scrollup" id="scrollUp"><i class="ri-arrow-up-line"></i></button>
+   <script src="main.js"></script>
+</body>
+
+</html>
