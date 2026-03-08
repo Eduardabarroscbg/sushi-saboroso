@@ -1,34 +1,101 @@
+<div align="center">
+
+<img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge" />
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+
 # 🍣 Sushi Saboroso
 
-Website de restaurante japonês desenvolvido com HTML, CSS e JavaScript.
+> Website completo de restaurante japonês — responsivo, com lightbox, filtro de cardápio e animações.
 
-## 📁 Arquivos
+</div>
 
-| Arquivo | Descrição |
-|---|---|
-| `index.html` | Estrutura principal da página |
-| `styles.css` | Todos os estilos do site |
-| `main.js` | Interatividade e funcionalidades |
+---
+
+## 📸 Preview
+
+> 💡 *Adicione aqui um screenshot ou GIF do projeto. Dica: use [ScreenToGif](https://www.screentogif.com/) para gravar a tela e gerar um GIF.*
+
+```
+![Preview do Sushi Saboroso](./preview.gif)
+```
+
+---
 
 ## ✨ Funcionalidades
 
-- 🎥 Hero com vídeo em loop
-- 🍽️ Cardápio com filtro por categoria (Sushi, Ramen, Outros)
-- 🖼️ Lightbox nas fotos dos pratos (clique para ampliar)
-  - Navegação por setas e teclado (← →)
-  - Swipe no celular
-  - Fechar com ESC ou botão ✕
-- 📱 Layout responsivo (mobile, tablet, desktop)
-- 📧 Formulário de newsletter com validação
-- 🎨 Animações suaves ao rolar a página
-- ⬆️ Botão de voltar ao topo
+- 🎥 **Hero animado** com vídeo em loop
+- 🍽️ **Cardápio interativo** com filtro por categoria (Sushi, Ramen, Outros)
+- 🖼️ **Lightbox** nas fotos dos pratos — navegação por setas, teclado e swipe
+- 📱 **Layout responsivo** — mobile, tablet e desktop
+- 📧 **Newsletter** com validação completa de e-mail
+- 🎨 **Animações** suaves com IntersectionObserver
+- ⬆️ **Scroll to top** com botão flutuante
 
-## 🚀 Como Usar
+---
 
-Abra o arquivo `index.html` diretamente no navegador — não precisa de servidor ou instalação.
+## 🛠️ Tecnologias
 
-## 🎨 Design
+| Tecnologia | Uso |
+|---|---|
+| HTML5 | Estrutura semântica e acessível |
+| CSS3 | Layout, animações e responsividade |
+| JavaScript | Lightbox, filtros, validação e scroll |
+| RemixIcon | Biblioteca de ícones |
+| Google Fonts | Playfair Display + DM Sans |
 
-- **Cores:** Vermelho `#C1273A`, Creme `#FAF3E8`, Vinho `#3D0A14`
-- **Fontes:** Playfair Display (títulos) + DM Sans (textos)
-- **Ícones:** RemixIcon 4.6.0
+---
+
+## 📁 Estrutura
+
+```
+sushi-saboroso/
+├── index.html       # Estrutura da página
+├── styles.css       # Todos os estilos
+├── main.js          # Toda a interatividade
+└── sushi-girl.mp4   # Vídeo do hero
+```
+
+---
+
+## 🚀 Como rodar
+
+Não precisa instalar nada. Basta abrir o `index.html` no navegador:
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/sushi-saboroso.git
+
+# Abra no navegador
+open index.html
+```
+
+---
+
+## 📱 Responsividade
+
+| Dispositivo | Breakpoint |
+|---|---|
+| Desktop | > 960px |
+| Tablet | ≤ 960px |
+| Mobile | ≤ 600px |
+
+---
+
+## 🎨 Paleta de Cores
+
+| Cor | Hex | Uso |
+|---|---|---|
+| 🔴 Vermelho | `#C1273A` | Destaque e botões |
+| 🍷 Vinho | `#3D0A14` | Footer |
+| 🟤 Creme | `#FAF3E8` | Fundo principal |
+| ⚫ Escuro | `#1C0E08` | Textos |
+
+---
+
+<div align="center">
+
+Feito com ❤️ por **seu nome aqui**
+
+</div>
