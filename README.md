@@ -15,11 +15,7 @@
 
 ## 📸 Preview
 
-> 💡 *Adicione aqui um screenshot ou GIF do projeto. Dica: use [ScreenToGif](https://www.screentogif.com/) para gravar a tela e gerar um GIF.*
-
-```
-![Preview do Sushi Saboroso](./preview.gif)
-```
+![Preview do Sushi Saboroso](./videoreadme.gif)
 
 ---
 
@@ -65,7 +61,7 @@ Não precisa instalar nada. Basta abrir o `index.html` no navegador:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/sushi-saboroso.git
+git clone https://github.com/Eduardabarroscbg/sushi-saboroso.git
 
 # Abra no navegador
 open index.html
@@ -96,6 +92,6 @@ open index.html
 
 <div align="center">
 
-Feito com ❤️ por **seu nome aqui**
+Feito com ❤️ por Eduarda Barros
 
 </div>
