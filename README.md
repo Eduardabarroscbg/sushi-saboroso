@@ -2,7 +2,7 @@
   <h1 align="center">🍣 Sushi Saboroso — Website de Restaurante Japonês</h1>
 </div>
 
-![Project Preview](sushi saboroso.png)
+![Project Preview](sushi-saboroso.png)
 
 Um website completo de restaurante japonês, construído com **HTML, CSS e JavaScript puros**. Totalmente responsivo, com lightbox, filtro de cardápio interativo e animações suaves.
 
