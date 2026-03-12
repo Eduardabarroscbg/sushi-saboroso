@@ -13,12 +13,6 @@
 
 ---
 
-## 📸 Preview
-
-![Preview do Sushi Saboroso](./videoreadme.gif)
-
----
-
 ## ✨ Funcionalidades
 
 - 🎥 **Hero animado** com vídeo em loop
